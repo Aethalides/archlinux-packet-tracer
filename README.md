@@ -30,17 +30,17 @@ If a warning is displayed that the Packet tracer directory could not be found, t
 
 [2] https://assessment.netacad.net/check/check.html
 
-# UPDATE # 
+# UPDATE #
+
 I've run ahead to try an exam which uses Packet Tracer and at the moment I am getting an error, as per below
----
-Unable To Determine Cisco Packet Tracer Installation Directory
 
-The Packet Tracer Skills Assessment Player was unable to find the directory in which Packet Tracer is installed. Review the setup procedure for Packet Tracer Skills Assessments.
+  Unable To Determine Cisco Packet Tracer Installation Directory
 
-Important Note: If you have recently installed or upgraded Packet Tracer on your computer, you should re-start your computer to ensure that some important information about the Packet Tracer installation has been integrated into your computer's environment settings.
+  The Packet Tracer Skills Assessment Player was unable to find the directory in which Packet Tracer is installed. Review the setup procedure for Packet Tracer Skills Assessments.
 
-Message ID: XP-ERR-005
+  Important Note: If you have recently installed or upgraded Packet Tracer on your computer, you should re-start your computer to ensure that some important information about the Packet Tracer installation has been integrated into your computer's environment settings.
 
----
+  Message ID: XP-ERR-005
+
 
 I will be debugging this later and report back here.

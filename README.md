@@ -42,5 +42,12 @@ I've run ahead to try an exam which uses Packet Tracer and at the moment I am ge
 
   Message ID: XP-ERR-005
 
+Ok this error was because the online assessement is looking for a binary called packettracer instead of the new name PacketTracer7
 
-I will be debugging this later and report back here.
+It also wants files from the extensions folder below bin.
+
+Fixed by adding some symbolic links
+
+        ln -s /usr/share/packet-tracer/bin/PacketTracer7 /usr/share/packet-tracer/bin/packettracer
+        ln -s /usr/share/packet-tracer/extensions /usr/share/packet-tracer/bin/extensions
+

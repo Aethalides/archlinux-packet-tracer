@@ -4,7 +4,7 @@
 pkgname="packet-tracer"
 _pktracer_realname="PacketTracer"
 pkgver=7.1
-pkgrel=1
+pkgrel=2
 arch=('x86_64')
 pkgdesc="Cisco Packet Tracer is a powerful network simulation program that allows students to experiment with network behavior and ask “what if” questions. As an integral part of the Networking Academy comprehensive learning experience, Packet Tracer provides simulation, visualization, authoring, assessment, and collaboration capabilities and facilitates the teaching and learning of complex technology concepts."
 url="http://www.cisco.com/web/learning/netacad/course_catalog/PacketTracer.html"
@@ -120,4 +120,11 @@ package() {
 	unlink "${__realpkgdir}/bin/linguist"
 	
 	ln -s "/usr/bin/linguist" "${__realpkgdir}/bin/linguist"
+	
+	# we need to make a few symbolic links to make sure the online assessement work
+        # it basically tries to call packet tracer with the old name and locations
+
+        ln -s /usr/share/packet-tracer/bin/PacketTracer7 "${__realpkgdir}/bin/packettracer"
+        ln -s /usr/share/packet-tracer/extensions "${__realpkgdir}/bin/extensions"
+
 }
